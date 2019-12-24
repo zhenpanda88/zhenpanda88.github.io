@@ -1,4 +1,4 @@
-#This is my personal website. It's built off of the Prolgue template by HTML5 UP.
+# This is my personal website. It's built off of the Prolgue template by HTML5 UP.
 
 Prologue by HTML5 UP
 html5up.net | @ajlkn
