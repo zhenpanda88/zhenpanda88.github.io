@@ -2,11 +2,56 @@
 <html>
 <title>Cardboard Furniture Lounge</title>
 
+<head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		.mySlides {display:none;}
+	</style>
+</head>
+
+<body>
+
 <xmp theme="bootstrap" style="display:none;">
-##[Home](../index.html) | [Portfolio](../index.html#portfolio)
+##[Home](../index.html) | [Portfolio](../index.html#portfolio) 
 ---
 
-## <strike>Cardboard</strike>&nbsp;Corrugated Furniture Lounge
+<!--Slideshow-->
+<div class="w3-content" >
+	<div class="w3-display-container mySlides">
+		<img src="images/cardboard07.jpg" style="width:100%">
+		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			The Lounge @ Toby Plaza
+		</div>
+	</div>
+	<div class="w3-display-container mySlides">
+		<img src="images/cardboard11.jpg" style="width:100%">
+		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			Clair testing the Banana Chair
+		</div>
+	</div>
+	<div class="w3-display-container mySlides">
+		<img src="images/cardboard09.jpg" style="width:100%">
+		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			Tea Party with Shaksham!
+		</div>
+	</div>
+	<div class="w3-display-container mySlides">
+		<img src="images/cardboard10.jpg" style="width:100%">
+		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			Lounging with Ray and Kate
+		</div>
+	</div>
+	<div class="w3-display-container mySlides">
+		<img src="images/cardboard08.jpg" style="height:100%">
+		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			Ian enjoying his simple chair
+		</div>
+	</div>
+</div>
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+# <strike>Cardboard</strike>&nbsp;Corrugated Furniture Lounge
 
 **"Oh cool, cardboard furniture!"**
 
@@ -35,31 +80,31 @@ These are the proposals we submitted to the committee:
 
 **1. Basic Chair**
 
-![image](https://66.media.tumblr.com/15867be358102428b0f5972d24372e30/tumblr_inline_ptm8w05Lky1renjum_540.jpg)
+![image](images/cardboard01.jpg)
 
 **2. Flower Pots&nbsp;**
 
-![image](https://66.media.tumblr.com/a9521061147abae275081737d84c99c4/tumblr_inline_ptm8x4wj5h1renjum_540.jpg)
+![image](images/cardboard02.jpg)
 
 **3. Grid Chair - my design!**
 
-![image](https://66.media.tumblr.com/225ca5bd5222f637921e15ea4d451689/tumblr_inline_ptm8ydROyi1renjum_540.jpg)
+![image](images/cardboard03.jpg)
 
 **4. Banana Chair**
 
-![image](https://66.media.tumblr.com/1834f0d884afda26153b185fd2f51697/tumblr_inline_ptm8zljlNp1renjum_540.jpg)
+![image](images/cardboard04.jpg)
 
 **5. Shade Tree**
 
-![image](https://66.media.tumblr.com/40ae0c340b4a3a46d02d93018b8c9203/tumblr_inline_ptm91askEe1renjum_540.jpg)
+![image](images/cardboard05.jpg)
 
 **6. T Shape**
 
-![image](https://66.media.tumblr.com/683b2f3d9f70b1a6eaebc74b61b2eef8/tumblr_inline_ptm91nRWlu1renjum_540.jpg)
+![image](images/cardboard06.jpg)
 
 **7. L Shape**
 
-![image](https://66.media.tumblr.com/a8ba8cbca65ddeff308a741a24b57754/tumblr_inline_ptm922NrAd1renjum_540.jpg)
+![image](images/cardboard12.jpg)
 
 ## Final Product
 
@@ -68,9 +113,33 @@ The committee ultimately chose the **Flower Pot** chair and table design as it w
 A special thanks to my teammates Ian Charnas, Claire Barratt, Matthew Canel, Andrew Dupuis, Kate Hart, Raymond Krajci, Ryan Laganson, and Yanzhou Wang
 
 ---
-##[Home](../index.html) | [Portfolio](../index.html#portfolio)
+##[Home](../index.html) | [Portfolio List](../index.html#portfolio)
+&copy; Jerray Dewa. All rights reserved.   
 </xmp>
 
-
+<!--Markdown Script-->
 <script src="assets/strapdown.js"></script>
+
+<!--Slideshow Script-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
 </html>

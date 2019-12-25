@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio Template</title>
+
+<head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		.mySlides {display:none;}
+	</style>
+</head>
+
+<body>
+<!--Header-->
+<xmp theme="bootstrap" style="display:none;">
+##[Home](../index.html) | [Portfolio](../index.html#portfolio) 
+---
+
+<!--Slideshow-->
+<div class="w3-content" >
+	<div class="w3-display-container mySlides">
+		<img src="../images/avatar.jpg" style="width:100%">
+		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			Caption
+		</div>
+	</div>
+</div>
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+<!--Markdown Content goes here-->
+
+
+<!--Footer-->
+
+---
+##[Home](../index.html) | [Portfolio List](../index.html#portfolio)
+&copy; Jerray Dewa. All rights reserved.  
+</xmp>
+
+<!--Markdown Script-->
+<script src="assets/strapdown.js"></script>
+
+<!--Slideshow Script-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
