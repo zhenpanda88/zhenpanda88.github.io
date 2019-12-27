@@ -2,11 +2,39 @@
 <html>
 <title>Jolly Scholar Tap Handle Project</title>
 
-<xmp style="display:none;">
-###[Home](../index.html) | [Portfolio](../index.html#portfolio) 
+<head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		.mySlides {display:none;}
+	</style>
+</head>
+
+<body>
+<!--Header-->
+<xmp theme="bootstrap" style="display:none;">
+##[Home](../index.html) | [Portfolio](../index.html#portfolio) 
 ---
 
-![image](images/tap01.jpg)
+<!--Slideshow-->
+<div class="w3-content" >
+	<div class="w3-display-container mySlides">
+		<img src="images/tap01.jpg" style="width:100%">
+		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			Tap Handle Visual Test<br>
+			(with other tap handles)
+		</div>
+	</div>
+	<div class="w3-display-container mySlides">
+		<img src="images/tap02.jpg" style="width:100%">
+		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			The Team!
+		</div>
+	</div>
+</div>
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+<!--Markdown Content goes here-->
 
 ## Custom Tap Handle Project
 
@@ -41,10 +69,36 @@ After building the first prototype of the new design, we met with the Jolly Scho
 
 A special thank you to my team partners: Celena Hsiung, Richard Offhaus IV, Alex Shimek, Gavin Markowitz, and Ray Krajci
 
+<!--Footer-->
+
 ---
-###[Home](../index.html) | [Portfolio List](../index.html#portfolio)
-&copy; Jerray Dewa. All rights reserved. 
+##[Home](../index.html) | [Portfolio List](../index.html#portfolio)
+&copy; Jerray Dewa. All rights reserved.  
 </xmp>
 
-<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+<!--Markdown Script-->
+<script src="assets/strapdown.js"></script>
+
+<!--Slideshow Script-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
 </html>

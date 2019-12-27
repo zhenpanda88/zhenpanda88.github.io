@@ -2,11 +2,38 @@
 <html>
 <title>Bayesian Autonomous Broadcasting Sentry</title>
 
-<xmp style="display:none;">
-###[Home](../index.html) | [Portfolio](../index.html#portfolio) 
+<head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		.mySlides {display:none;}
+	</style>
+</head>
+
+<body>
+<!--Header-->
+<xmp theme="bootstrap" style="display:none;">
+##[Home](../index.html) | [Portfolio](../index.html#portfolio) 
 ---
 
-![image](images/babs01.jpg)
+<!--Slideshow-->
+<div class="w3-content" >
+	<div class="w3-display-container mySlides">
+		<img src="images/babs01.jpg">
+		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			BABS in my Senior Project Configuration
+		</div>
+	</div>
+	<div class="w3-display-container mySlides">
+		<img src="images/babs02.jpg">
+		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			BABS Control System Closeup
+		</div>
+	</div>
+</div>
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+<!--Markdown Content goes here-->
 
 ## Bayesian Autonomous Broadcasting Sentry (BABS)
 
@@ -20,13 +47,39 @@ The chassis and other structural components were fabricated in the CWRU think[bo
 
 Overall, using the robot was a decent experience except for a couple minor complaints. Due to the two level internal compartments, wiring and re-wiring the robot was frustrating at times. Eventually I resorted to drilling a 1/2" hole in the side to improve accessibility for wiring. A more critical issue involved the computer system. There was a specific incident where the battery died while the computer was still on, corrupting the hard drive. This forced us to reinstall the OS and resulted in a several days of lost time. Despite these issues, this robot got the job done. It wasn't pretty, but BABS got it done.&nbsp;
 
-On a side note, this robot is really fun to drive. Here's me driving thru a bunch of big tetris blocks.&nbsp;
+On a side note, this robot is really fun to drive. Here's me driving thru a bunch of tetris blocks.&nbsp;
 <iframe width="100%" height="500" id="youtube_iframe" src="https://www.youtube.com/embed/TmU2cMWAnos?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
+<!--Footer-->
+
 ---
-###[Home](../index.html) | [Portfolio List](../index.html#portfolio)
-&copy; Jerray Dewa. All rights reserved. 
+##[Home](../index.html) | [Portfolio List](../index.html#portfolio)
+&copy; Jerray Dewa. All rights reserved.  
 </xmp>
 
-<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+<!--Markdown Script-->
+<script src="assets/strapdown.js"></script>
+
+<!--Slideshow Script-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
 </html>
