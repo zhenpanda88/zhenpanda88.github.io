@@ -1,86 +1,74 @@
 <!DOCTYPE html>
 <html>
-<title>Bayesian Autonomous Broadcasting Sentry</title>
 
 <head>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<style>
-		.mySlides {display:none;}
-	</style>
-	<link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="assets/portfolio.css"/>
 </head>
 
 <body>
-<!--Header-->
-<xmp theme="bootstrap" style="display:none;">
-##[Home](../index.html) | [Portfolio](../index.html#portfolio) 
----
+  <!--Header-->
+    <header>
+        <h2>Bayesian Autonomous Broadcasting Sentry (BABS)</h2>
+    </header>
+    <!--Slideshow-->
+        <div class="w3-content" style="margin-top: 50px;padding:5px;">
+            <div class="w3-content w3-display-container">
+                <div class="w3-display-container mySlides">
+                    <img src="images/babs02.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        BABS Control System Closeup
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="images/babs01.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        BABS in my Senior Project Configuration
+                    </div>
+                </div>
+                <button class="w3-button w3-display-topleft w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-topright w3-black" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </div>  
+    <!--Content-->
+    <div class="content">
+        <p>This robot is called the Bayesian Autonomous Broadcasting Sentry(BABS) Research Robot Platform. It was originally used in an autonomous sentry project for the Air Force, but it was transitioned for use for senior capstone projects. This included my senior project. While I can&#39;t discuss the my senior project due to a NDA, I can talk about BABS as a general robot platform.&nbsp;</p>
+        <p><strong>The Robot</strong></p>
+        <p>The chassis and other structural components were fabricated in the CWRU think[box] makerspace. BABS has a tank tread drive train for movement and a two degree-of-freedom (DOF) arm for marking or manipulation. It also uses a front facing LIDAR and 2 wobbling LIDAR located on both ends of the chassis for object detection. On top of BABS is a GPS antenna with the GPS transceiver located inside the chassis. For computer vision, there are two fish-eye lenses cameras on each end of the chassis and a thermal camera in the front. A camera was also retrofitted above the two DOF arm to provide further vision coverage. BABS is controlled with a Ubuntu system running the Robotic Operating System (ROS).&nbsp;</p>
+        <p><strong>Using the Robot</strong></p>
+        <p>Overall, using the robot was a decent experience except for a couple minor complaints. Due to the two level internal compartments, wiring and re-wiring the robot was frustrating at times. Eventually I resorted to drilling a 1/2&quot; hole in the side to improve accessibility for wiring. A more critical issue involved the computer system. There was a specific incident where the battery died while the computer was still on, corrupting the hard drive. This forced us to reinstall the OS and resulted in a several days of lost time. Despite these issues, this robot got the job done. It wasn&#39;t pretty, but BABS got it done.&nbsp;</p>
+        <p>On a side note, this robot is really fun to drive. Here&#39;s me driving thru a bunch of tetris blocks.&nbsp;</p>
 
-<!--Slideshow-->
-<div class="w3-content" >
-	<div class="w3-display-container mySlides">
-		<img src="images/babs01.jpg" style="width:100%">
-		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-			BABS in my Senior Project Configuration
-		</div>
-	</div>
-	<div class="w3-display-container mySlides">
-		<img src="images/babs02.jpg" style="width:100%">
-		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-			BABS Control System Closeup
-		</div>
-	</div>
-</div>
-<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+        <iframe width="100%" height="500" id="youtube_iframe" src="https://www.youtube.com/embed/TmU2cMWAnos?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        
+    </div>
+  
+    <!--Footer-->
+    <div class="footer">
+        <hr>
+        <h2><a href="../index.html">HOME</a> | <a href="../index.html#about">ABOUT</a> | <a href="../index.html#portfolio">PORTFOLIO</a></h2>
+        <p>&copy; Jerray Dewa. All rights reserved.</p>
+    </div>
 
-<!--Markdown Content goes here-->
+    <!--Slideshow Script-->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
-## Bayesian Autonomous Broadcasting Sentry (BABS)
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
 
-This robot is called the Bayesian Autonomous Broadcasting Sentry(BABS) Research Robot Platform. It was originally used in an autonomous sentry project for the Air Force, but it was transitioned for use for senior capstone projects. This included my senior project. While I can't discuss the my senior project due to a NDA, I can talk about BABS as a general robot platform.&nbsp;
-
-**The Robot**
-
-The chassis and other structural components were fabricated in the CWRU think[box] makerspace. BABS has a tank tread drive train for movement and a two degree-of-freedom (DOF) arm for marking or manipulation. It also uses a front facing LIDAR and 2 wobbling LIDAR located on both ends of the chassis for object detection. On top of BABS is a GPS antenna with the GPS transceiver located inside the chassis. For computer vision, there are two fish-eye lenses cameras on each end of the chassis and a thermal camera in the front. A camera was also retrofitted above the two DOF arm to provide further vision coverage. BABS is controlled with a Ubuntu system running the Robotic Operating System (ROS).&nbsp;
-
-**Using the Robot**
-
-Overall, using the robot was a decent experience except for a couple minor complaints. Due to the two level internal compartments, wiring and re-wiring the robot was frustrating at times. Eventually I resorted to drilling a 1/2" hole in the side to improve accessibility for wiring. A more critical issue involved the computer system. There was a specific incident where the battery died while the computer was still on, corrupting the hard drive. This forced us to reinstall the OS and resulted in a several days of lost time. Despite these issues, this robot got the job done. It wasn't pretty, but BABS got it done.&nbsp;
-
-On a side note, this robot is really fun to drive. Here's me driving thru a bunch of tetris blocks.&nbsp;
-<iframe width="100%" height="500" id="youtube_iframe" src="https://www.youtube.com/embed/TmU2cMWAnos?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
-<!--Footer-->
-
----
-##[Home](../index.html) | [Portfolio List](../index.html#portfolio)
-&copy; Jerray Dewa. All rights reserved.  
-</xmp>
-
-<!--Markdown Script-->
-<script src="assets/strapdown.js"></script>
-
-<!--Slideshow Script-->
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        }
+    </script>
 </body>
 </html>

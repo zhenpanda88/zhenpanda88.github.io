@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="assets/portfolio.css"/>
+</head>
+
+<body>
+  <!--Header-->
+    <header>
+        <h2>Project Name</h2>
+    </header>
+    <!--Slideshow-->
+        <div class="w3-content" style="margin-top: 50px;padding:5px;">
+            <div class="w3-content w3-display-container">
+                <div class="w3-display-container mySlides">
+                    <img src="images/cardboard07.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        The Lounge @ Toby Plaza
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="images/cardboard11.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Clair testing the Banana Chair
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="images/cardboard09.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Tea Party with Saksham!
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="images/cardboard10.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Lounging with Ray and Kate
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides" style="text-align: center">
+                    <img src="images/cardboard08.jpg" style="width:60%;">
+                    <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">
+                        Ian enjoying his simple chair
+                    </div>
+                </div>
+                <button class="w3-button w3-display-topleft w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-topright w3-black" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </div>  
+    <!--Content-->
+    <div class="content">
+        
+
+        
+    </div>
+  
+    <!--Footer-->
+    <div class="footer">
+        <hr>
+        <h2><a href="../index.html">HOME</a> | <a href="../index.html#about">ABOUT</a> | <a href="../index.html#portfolio">PORTFOLIO</a></h2>
+        <p>&copy; Jerray Dewa. All rights reserved.</p>
+    </div>
+
+    <!--Slideshow Script-->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>
