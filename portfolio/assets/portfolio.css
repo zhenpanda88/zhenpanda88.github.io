@@ -10,7 +10,7 @@ body {
   color: #888;
   max-width: 800px;
   margin: auto;
-  background: white;
+  background: #f4f4f4;
 }
 
 strong{
@@ -80,7 +80,7 @@ hr {
 header{
     position: fixed;
     top: 0;
-    background-color: white;
+    background-color: inherit;
     padding:0px 10px;
     width:100%;
     z-index: 99;
