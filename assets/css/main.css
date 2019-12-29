@@ -1,6 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
 /*
 	Prologue by HTML5 UP
 	html5up.net | @ajlkn
@@ -84,7 +84,7 @@ input, select, textarea {
 
 	body {
 		background: #fff;
-		font-family: 'Montserrat', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-size: 20pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -111,6 +111,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Montserrat', sans-serif;
 		font-weight: 300;
 		color: #666;
 		line-height: 1.5em;

@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
 
 body {
-	font-family: 'Open Sans', sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 150%;
-  color: #888;
-  max-width: 800px;
-  margin: auto;
-  background: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 150%;
+    color: #888;
+    max-width: 800px;
+    margin: auto;
+    background: #f4f4f4;
 }
 
 strong{
@@ -78,8 +77,8 @@ hr {
 }
 
 header{
-    position: fixed;
-    top: 0;
+    /*position: fixed;
+    top: 0;*/
     background-color: inherit;
     padding:0px 10px;
     width:100%;
