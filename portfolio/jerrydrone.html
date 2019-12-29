@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="assets/portfolio.css"/>
+</head>
+
+<body>
+  <!--Header-->
+    <header>
+        <h2>CWRU DBF - Autonomous Drone Platform</h2>
+    </header>
+    <!--Slideshow-->
+    <video src="images/jerrydrone.mp4" width=100% height=auto style="padding:5px;" controls preload></video>
+    <!--Content-->
+    <div class="content">
+    	<h3>a.k.a. The Jerry-Drone</h3>
+        <p>This is a quadcopter that I donated to my uni's Design-Build-Design (DBF) team that I was a member of. Although the team focused mainly on the annual AIAA DBF competition, the team began expanded into other competitions including an autonomous drone competition. As this was new territory for the team, I decided to donate my quadcopter parts from an unfinished project started in high school.</p>
+		<p>The goal of the drone was to get it built and flying with a similar payload of the future competition drone. This was to simulate the dynamics and flight sustainability of the competition conditions so we could plan and design the competition drone.</p>
+		<p>A part of the payload was a Pixhawk Autopilot controller (with a GPS receiver module). This allowed for autonomous navigation using GPS. Unfortunately, the controller contains a safety feature where the controller kills the motors if it can't find a GPS signal. This resulted in several failed flight attempts as our uni's campus contains several tall buildings located adjacent to one another and few open areas. Luckily, we found a sweet spot on the soccer field which had a signal.</p>
+		<p>After the flight tests, we realized that we overestimated our flight time with the current components to payload combination and thus we had to redo our battery and motor power calculations. We also found that the frame's aluminum landing gear was far too malleable for regular use. In the photo below, you can see that the landing gear is bent from the impact of the (somewhat soft) landing. The freshmen found out that they should locktite all of the screws, especially on something that flies and shakes a lot (one of the motors came off during the last flight; you can see it on the left most arm of the drone in the picture below).</p>
+		<img src="https://66.media.tumblr.com/c20de7498b695d012f79537f6f748c31/tumblr_inline_pareytwhWb1renjum_540.jpg" alt="image" width=100%>
+		<h3>Components:</h3>
+		<ul>
+			<li><p>Hobbyking H4 Copter Multi-Rotor Quadcopter Frame</p></li>
+			<li><p>FC32 Flight Controller Rev 6</p></li>
+			<li><p>Pixhawk Autopilot Controller</p></li>
+			<li><p>3DR uBlox LEA-6H High-Performance Receiver</p></li>
+			<li><p>Turnigy D2830-11 1000kv Brushless Motor (x4)</p></li>
+			<li><p>Turnigy AE-30A Brushless Speed Controllers (x4)</p></li>
+			<li><p>HobbyKing Slowfly Propeller 10x4.5 Black (x4)</p></li>
+			<li><p>Turnigy Nano-Ttech 2200mah 4S 35~70C Lipo Pack</p></li>
+		</ul>
+
+        
+    </div>
+  
+    <!--Footer-->
+    <div class="footer">
+        <hr>
+        <h2><a href="../index.html">HOME</a> | <a href="../index.html#about">ABOUT</a> | <a href="../index.html#portfolio">PORTFOLIO</a></h2>
+        <p>&copy; Jerray Dewa. All rights reserved.</p>
+    </div>
+
+    <!--Slideshow Script-->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>
