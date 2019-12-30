@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="assets/portfolio.css"/>
+</head>
+
+<body>
+  <!--Header-->
+    <header>        
+        <h2>think[box] PCB Fabrication Service</h2>
+    </header>
+    <!--Slideshow-->
+        <div class="w3-content" style="padding:5px;">
+            <div class="w3-content w3-display-container">
+                <div class="w3-display-container mySlides">
+                    <img src="images/pcbfab01.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        T-Tech QC-J5
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="images/pcbfab02.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Ian, my lovely (former) boss at think[box]
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="images/pcbfab03.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Router Spindel + Camera Sensor
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides">
+                    <img src="images/pcbfab04.jpg" style="width:100%">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        CLose up of FR4 Plate
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides" style="text-align: center">
+                    <img src="images/pcbfab05.gif" style="width:100%;">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Router in action
+                    </div>
+                </div>
+                <div class="w3-display-container mySlides" style="text-align: center">
+                    <img src="images/pcbfab06.jpg" style="width:100%;">
+                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                        Board Example from <a href="">my Tap Handle Project</a>
+                    </div>
+                </div>
+                <button class="w3-button w3-display-topleft w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-topright w3-black" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </div>  
+    <!--Content-->
+    <div class="content">
+        <p>This is one of my professional projects. During my undergraduate time at Case Western Reserve University, I worked at my university's makerspace, think[box]. One of my projects for the space was to setup a new PCB router and PCB manufacturing service. With this new PCB router, the space is able to provide a circuit board service which offers a 1-2 day turnaround time for students and makers. For comparison, most Chinese circuit board manufacturers have a 1-1.5 week turnaround time and most American PCB manufacturers have a 2-4 week turnaround time (for low yield prototype production, obviously any pcb manufacturer can churn out boards once they setup a production line).&nbsp;</p>
+        <p>The PCB Router is the T-Tech QC-J5. The machine drills holes and cuts isolation paths from a full sheet of single- or double-sided copper clad material, leaving behind the traces, pads, vias and pin holes for components to be attached. The machine has a tool pod capacity of 36 tools, which the machine is able to grab and swap tools automatically. The copper board is held down by a vacuum table and the tool head also contains a vacuum for debris removal.&nbsp;</p>
+        <p>The PCB manufacturing service works by submitting gerber and excellion files to the makerspace's website. From there, the staff will process your files and route out the board. Once the board(s) are ready for pickup, the staff member will notify the file submitter that the board(s) are ready.&nbsp;</p>
+        <p>More info can be found here:&nbsp;<a href="http://thinkbox.case.edu/equipment/pcbrouter">http://thinkbox.case.edu/equipment/pcbrouter</a>. Note that this service does offer deliveries so you should only use this service if you can drive to Cleveland, OH in a reasonable time or fashion.</p>
+        <p>If you're in the Cleveland area, you should check this service out or, even better, visit the entire think[box] makerspace!</p>        
+    </div>
+  
+    <!--Footer-->
+    <div class="footer">
+        <hr>
+        <h2><a href="../index.html">HOME</a> | <a href="../index.html#about">ABOUT</a> | <a href="../index.html#portfolio">PORTFOLIO</a></h2>
+        <p>&copy; Jerray Dewa. All rights reserved.</p>
+    </div>
+
+    <!--Slideshow Script-->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>
