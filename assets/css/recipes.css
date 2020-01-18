@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 150%;
+    color: #A9A9A9;
+    max-width: 800px;
+    margin: auto;
+    background: #393e46;
+}
+
+strong{
+  font-weight: 600;
+  color: #666;
+}
+
+.footer {
+      
+      bottom: 0;
+      width: 100%;
+      margin: auto;
+
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #eeeeee;
+    line-height: 1.5em;
+    margin: 15px 0;
+  }
+
+pre {
+  margin: 20px 0;
+}
+
+
+.navbar {
+  z-index: 1;
+}
+
+.table {
+  width: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    -webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    -ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+    outline: 0; 
+  }
+
+    a:hover {
+      color: #99CCFF;
+      border-bottom-color: rgba(255, 255, 255, 0);
+    }
+
+p a{
+    color:#999;
+}
+
+hr {
+    border: 0;
+    border-top: solid 1px #696969;
+  }
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+.content {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+header{
+    /*position: fixed;
+    top: 0;*/
+    background-color: inherit;
+    padding:0px 5px;
+    width:100%;
+    z-index: 99;
+}
+
+@media only screen and (max-width: 736px) {
+  header.fixed{
+    position:relative;
+  }
+}
+
+

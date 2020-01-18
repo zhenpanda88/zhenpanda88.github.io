@@ -209,6 +209,10 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
+	p.alt1{
+		text-align: center;
+	}
+
 	br.clear {
 		clear: both;
 	}
@@ -1803,6 +1807,7 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+			font-family: 'Montserrat', sans-serif;
 		}
 
 	ol {
@@ -2408,6 +2413,11 @@ input, select, textarea {
 				display: none;
 			}
 
+			p.alt1{
+				text-align: center;
+				padding: 50px 0 0 0;
+			}
+
 			.container {
 				padding: 0 2em 0 2em;
 			}
@@ -2612,6 +2622,10 @@ input, select, textarea {
 
 			.container {
 				padding: 0 15px 0 15px;
+			}
+			p.alt1{
+				text-align: center;
+				padding: 50px 0 0 0;
 			}
 
 		/* List */
